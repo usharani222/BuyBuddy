@@ -1,0 +1,123 @@
+/* Body tweaks */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 85px;
+  background-color: #EAECF0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 4px solid lightblue;
+  position: relative;
+}
+
+/* Logo image properly aligned */
+.logo-image img {
+  height: 95px; /* Resizes image cleanly */
+  margin: 0;
+  object-fit: contain;
+  display: block;
+}
+
+/* Nav styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+/* Shared button/link styles */
+nav a,
+nav button {
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: 0.3s ease;
+  background-color: #ffffff;
+  border: 2px solid #555;
+}
+
+/* Hover effect */
+nav a:hover,
+nav button:hover {
+  background-color: #555;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Categories and Products specific override */
+.tag-categories-base,
+.tag-products-base,
+.tag-basket-base {
+  border: none;
+  background-color: transparent;
+  font-size: 1.1em;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: #222;
+  font-family: Verdana;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.tag-categories-base:hover,
+.tag-products-base:hover,
+.tag-basket-base:hover {
+  background-color: #ddeeff;
+}
+
+/* Logout form alignment */
+.logout-link {
+  display: inline-block;
+  margin: 0;
+}
+.logout-link button {
+  background-color: #ffdddd;
+  border-color: #ff3333;
+}
+.logout-link button:hover {
+  background-color: #ff3333;
+  color: white;
+}
+
+/* Responsive handling (optional but good) */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo-image img {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a, nav button {
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+  }
+}

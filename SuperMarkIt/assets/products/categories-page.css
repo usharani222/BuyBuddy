@@ -1,0 +1,59 @@
+.Categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.category {
+  background: #f1f7f8;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.category:hover {
+  background: #d0ecf0;
+  transform: translateY(-5px);
+}
+
+.thumbnails {
+  display: block;
+  margin: 0 auto 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: border-radius 0.3s ease;
+}
+
+.category:hover .thumbnails {
+  border-radius: 50%;
+}
+
+.category-name {
+  display: block;
+  color: #222;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 8px;
+  transition: all 0.3s ease;
+}
+
+.category:hover .category-name {
+  color: #0077b6;
+  background: transparent;
+  font-size: 17px;
+}
+
+.Categories h5 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+}

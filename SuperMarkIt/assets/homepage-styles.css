@@ -1,0 +1,104 @@
+/* Site description section */
+.site-description h2 {
+  color: #2A7FFD;
+  font-family: Arial, sans-serif;
+  font-size: 3.5em;
+  text-shadow: 2px 2px black;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.site-description p {
+  color: #222;
+  font-family: Arial, sans-serif;
+  font-size: 1.4em;
+  line-height: 1.6;
+  max-width: 80%;
+  margin: 10px auto;
+}
+
+/* Site description container */
+.site-description {
+  background: rgba(153, 160, 171, 0.7);
+  padding: 35px 30px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+  margin-left: 45vw;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.site-description:hover {
+  background: rgba(101, 102, 104, 0.9);
+  transform: scale(1.05);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Call-to-action style */
+.tag-about {
+  font-size: 1.1em;
+  padding: 12px 22px;
+  border-radius: 30px;
+  background-color: #A9C0E3;
+  color: black;
+  text-decoration: none;
+  border: 2px solid #02366D;
+  font-family: Verdana;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.tag-about:hover {
+  background-color: #02366D;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Fullscreen hero section */
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url('hero-homepage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Subtle overlay to improve text contrast */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.hero .site-description {
+  position: relative;
+  z-index: 1;
+}
+
+/* Footer credit */
+.created-by p {
+  text-align: right;
+  margin: 10px 20px;
+  color: #444;
+  font-size: 10px;
+}
+
+/* Fix: body selector had wrong syntax */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

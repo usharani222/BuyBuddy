@@ -1,0 +1,112 @@
+/* Filtered Products UI Styling */
+.Products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.product {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnails {
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+  height: 220px;
+  width: 200px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.product h5 {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.product .Amazon a,
+.product .Flipkart a,
+.product .Myntra a {
+  font-weight: bold;
+  font-size: 0.95em;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.product .Amazon a { color: #FF9900; }
+.product .Flipkart a { color: #2874F0; }
+.product .Myntra a { color: #ff3e6c; }
+
+.product .Amazon a:hover,
+.product .Flipkart a:hover,
+.product .Myntra a:hover {
+  text-decoration: underline;
+}
+
+.product-price {
+  font-size: 0.95em;
+  color: #111827;
+  margin-left: 10px;
+}
+
+.product span {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.attibute-qty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+input[name=quantity] {
+  width: 45px;
+  padding: 4px;
+  border: 1px solid #9ca3af;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+input[name=quantity]:focus {
+  border: 2px solid #2563eb;
+  outline: none;
+}
+
+.units-qty {
+  font-size: 15px;
+  margin-right: 8px;
+  color: #374151;
+}
+
+.btn-add-to-basket {
+  background-color: #10b981;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-add-to-basket:hover {
+  background-color: #059669;
+  transform: scale(1.05);
+}
